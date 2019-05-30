@@ -1,13 +1,16 @@
 from matplotlib import image
 from matplotlib import pyplot
+import pandas as pd
 
-
+print("HI")
 def dataimg():
 
-    data = image.imread('House.jpg')
+    data = image.imread('C:\\Users\\Vaikavi\\Desktop\\Kayaemo\\gigi.jpg')
+    imagedata = pd.DataFrame({"image": data})
 
-    print(data.dtype)
-    print(data.shape)
+    print(imagedata)
 
-    return data 
+    return imagedata 
 
+a = dataimg()
+print(a)
